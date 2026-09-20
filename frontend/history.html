@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan History - Phishing Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">Phishing Labs</div>
+    <a href="index.html">Home</a>
+    <a href="history.html">Scan History</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h1>Scan History</h1>
+    <p class="subtitle">Most recent URL scans</p>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>URL</th>
+            <th>Prediction</th>
+            <th>Risk Score</th>
+            <th>Confidence</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody id="history-body">
+          <tr><td colspan="5">No scans yet.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

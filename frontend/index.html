@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">Phishing Labs</div>
+    <a href="index.html">Home</a>
+    <a href="history.html">Scan History</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h1>Phishing Labs</h1>
+    <p class="subtitle">Analyze a website URL using machine learning</p>
+
+    <div class="card">
+      <form id="scan-form">
+        <input type="text" id="url-input" placeholder="https://example.com" required>
+        <button type="submit">Analyze URL</button>
+      </form>
+      <p id="scan-error" class="error"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

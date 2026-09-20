@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Phishing Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">Phishing Labs</div>
+    <a href="index.html">Home</a>
+    <a href="history.html">Scan History</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h1>How It Works</h1>
+    <p class="subtitle">Phishing Labs analyzes a URL in four layers</p>
+
+    <div class="card">
+      <h3>1. Client Layer</h3>
+      <p>You enter a URL in the browser. This page sends it to the backend for analysis.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. Feature Extraction Layer</h3>
+      <p>The backend breaks the URL down into 10 numeric features - length, dot count, hyphen count, HTTPS presence, IP address presence, and more.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. Model Inference Layer</h3>
+      <p>A Random Forest classifier, trained on a labeled dataset of phishing and legitimate URLs, uses those features to predict a class and a probability.</p>
+    </div>
+
+    <div class="card">
+      <h3>4. Response Layer</h3>
+      <p>The prediction, risk score, confidence, and a plain-language explanation are sent back as JSON and displayed on the Result page.</p>
+    </div>
+
+    <div class="card">
+      <p><strong>Note:</strong> this model is trained on a representative dataset for educational purposes. It is not 100% accurate and HTTPS alone does not guarantee a site is legitimate. See the README for exact evaluation metrics.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

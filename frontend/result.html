@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result - Phishing Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">Phishing Labs</div>
+    <a href="index.html">Home</a>
+    <a href="history.html">Scan History</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h1>Scan Result</h1>
+    <p class="subtitle" id="result-url"></p>
+
+    <div class="card">
+      <div id="prediction-text" class="prediction">-</div>
+      <div class="metric-row"><span>Risk Score</span><span id="risk-score">-</span></div>
+      <div class="metric-row"><span>Confidence</span><span id="confidence">-</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Feature Analysis</h3>
+      <div class="metric-row"><span>URL Length</span><span id="f-url-length">-</span></div>
+      <div class="metric-row"><span>HTTPS</span><span id="f-https">-</span></div>
+      <div class="metric-row"><span>IP Address</span><span id="f-ip">-</span></div>
+      <div class="metric-row"><span>Number of Dots</span><span id="f-dots">-</span></div>
+      <div class="metric-row"><span>Number of Hyphens</span><span id="f-hyphens">-</span></div>
+      <div class="metric-row"><span>Special Characters</span><span id="f-special">-</span></div>
+      <div class="metric-row"><span>Subdomains</span><span id="f-subdomains">-</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Basic Explanation</h3>
+      <ul class="reasons" id="reasons-list"></ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
